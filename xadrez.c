@@ -28,7 +28,7 @@ int main()
 
     // Sugestão: Implemente a movimentação do Cavalo utilizando loops com variáveis múltiplas e condições avançadas.
     // Inclua o uso de continue e break dentro dos loops.
-    int torre = 1, bispo = 3, rainha = 2, escolha;
+    int torre ='t', bispo ='b', rainha ='r', escolha;
     printf("escolha a peça que quer movimentar\n");
     printf("1:torre\n");
     printf("2:bispo\n");
@@ -51,16 +51,16 @@ int main()
     };
     if (escolha == torre)
     {
-        for (escolha; escolha <= 5; escolha++)
+        for (int i=1; i <= 5; i++)
         {
             printf("direita\n");
         };
     }
     else if (escolha == bispo)
     {
-        for (escolha; escolha <= 12; escolha++)
+        for (int i=1; i <= 10; i++)
         {
-            if (escolha % 2 != 0)
+            if (i % 2 != 0)
             {
                 printf("cima\n");
             }
@@ -72,7 +72,7 @@ int main()
     }
     else if (escolha == rainha)
     {
-        for (escolha; escolha <= 9; escolha++)
+        for (int i=1; i<= 8; i++)
         {
             printf("esquerda\n");
         }
